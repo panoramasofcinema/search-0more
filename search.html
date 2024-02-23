@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NWTQJ2DTJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9NWTQJ2DTJ');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Search | sOm</title>
+	<link rel="icon" type="image/x-icon" href="imgs/column.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1066.0.min.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/search.js"></script>
+</head>
+<body>
+    <section>
+        <div class="header_container">
+            <div class="row1">
+                <div class="logo_results">
+                    <a href='index.html'>search <strong>O</strong> more</a>
+                </div>
+                <div class="search_bar_container">
+                    <div class="search_box">
+                        <input type="text" name="" class="query" id="query_img" value="">
+                        <div id="buttons_container">
+                            <button class="searchBtn" id="img_icon"></button>
+                            <label class="drop-zone" id="upload_icon">
+                                <input type="file" id="fileUpload" value=""/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="options_container">
+                    <span onclick="filterAll(this)">all &nbsp;&nbsp;&nbsp;</span>
+                    <span onclick="filterModels(this)">models &nbsp;&nbsp;&nbsp;</span>
+                    <span onclick="filterTextures(this)">materials &nbsp;&nbsp;&nbsp;</span>
+                    <span onclick="filterPngs(this)">images</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+		<div class="results_grid"></div>
+    </section>
+
+    <section>
+        <div class="modal-content" id="myModal"></div>
+    </section>
+
+    <script>
+        // QUERY ACTIONS
+        let query = document.querySelector('.query');
+        let searchBtn = document.querySelector('.searchBtn');
+
+        searchBtn.onclick = function(){
+            let url = "search.html?q="+query.value;
+            window.open(url, '_self')
+        }
+        document.querySelector('#fileUpload').addEventListener('change', event => {
+            uploadImg(event);
+        })
+    </script>
+</body>
+</html>
