@@ -1,27 +1,33 @@
 * {
 	box-sizing: border-box;
-  }
-body{
-    margin: 0px;
-    background-color: whitesmoke;
+}
+
+body {
+	margin: 0px;
+	background-color: whitesmoke;
 	color: black;
 	font-family: 'Playfair Display', serif;
 	font-size: 15px;
 }
+
 a {
-    color: inherit;
-    text-decoration: inherit;
+	color: inherit;
+	text-decoration: inherit;
 }
+
 a:hover {
 	color: orangered;
 }
+
 span:hover {
 	color: orangered;
 }
+
 input {
 	color: orangered;
 	outline: none;
 }
+
 .hero-image {
 	background-image: url('../imgs/bg1.png');
 	height: calc(100vh);
@@ -29,30 +35,35 @@ input {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: static;
-  }
+}
 
 
 /* HOME PAGE */
 .inputGrid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	padding-top: 250px; /* margin-top: 250px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 250px;
+	/* margin-top: 250px; */
 }
+
 .title {
-    color: inherit;
+	color: inherit;
 	font-size: 65px;
 	font-weight: lighter;
 }
+
 .inputGrid .search_box {
 	margin-top: 15px;
 }
+
 .buttons {
 	display: inline-flex;
 	height: 50px;
 	width: 200px;
 	margin-top: 15px;
 }
+
 .buttons button {
 	background: inherit;
 	font-size: 15px;
@@ -63,9 +74,11 @@ input {
 	border-radius: 8px;
 	margin: auto;
 }
+
 .buttons button:hover {
 	background: orangered;
 }
+
 .inputGrid .drop-zone {
 	background: inherit;
 	font-size: 15px;
@@ -75,23 +88,27 @@ input {
 	padding: 6px 16px 6px 16px;
 	margin: auto;
 }
+
 .inputGrid .drop-zone:hover {
 	background: orangered;
 }
+
 #fileUpload {
-    display: none;
+	display: none;
 }
 
 .navBottom {
 	position: absolute;
-  	width: 100%; /*100%*/
- 	margin: 0;
-  	bottom: 25px;
-  	display: inline-flex;
+	width: 100%;
+	/*100%*/
+	margin: 0;
+	bottom: 25px;
+	display: inline-flex;
 }
+
 .navElement {
 	margin: auto;
-  }
+}
 
 
 
@@ -112,10 +129,12 @@ input {
 	margin-top: 55px;
 	font-size: 25px;
 }
-.options_container{
+
+.options_container {
 	margin-top: -60px;
 	margin-left: 235px;
 }
+
 .search_bar_container {
 	float: left;
 	margin-left: 30px;
@@ -131,51 +150,59 @@ input {
 	padding: 0px;
 	margin: 0px;
 }
+
 .search_box input {
 	position: relative;
 	background-color: inherit;
-    border: none;
+	border: none;
 	border-radius: 24px;
-    font-family: inherit;
-    font-size: inherit;
-    height: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	height: 100%;
 	width: 580px;
 	margin-left: 10px;
 	outline: none;
 }
-#buttons_container{
+
+#buttons_container {
 	position: absolute;
 	top: 0px;
 	right: 0px;
 }
-#buttons_container button{
+
+#buttons_container button {
 	height: 33px;
 	width: 50px;
 	display: block;
-	float: left;	
+	float: left;
 	border: 0px;
 }
-#buttons_container label{
+
+#buttons_container label {
 	height: 33px;
 	width: 50px;
 	border-radius: 0px 24px 24px 0px;
 	display: block;
 	float: left;
 }
+
 #img_icon {
 	background: rgba(245, 245, 245, 0) url('../imgs/image_icon.png') no-repeat;
 	background-position: center;
 	background-size: 60%;
 }
-#img_icon:hover{
+
+#img_icon:hover {
 	background-color: orangered;
 }
-#upload_icon{
+
+#upload_icon {
 	background: rgba(245, 245, 245, 0) url('../imgs/upload_icon.png') no-repeat;
 	background-position: center;
 	background-size: 60%;
 }
-#upload_icon:hover{
+
+#upload_icon:hover {
 	background-color: orangered;
 }
 
@@ -185,9 +212,10 @@ input {
 /* RESULTS */
 .results_grid {
 	margin-top: 200px;
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
+
 .container {
 	flex-grow: 1;
 	position: relative;
@@ -196,6 +224,7 @@ input {
 	height: 300px;
 	max-width: 100%;
 }
+
 .img_response {
 	object-fit: cover;
 	height: 180px;
@@ -205,31 +234,34 @@ input {
 /* MODAL ONE IMAGE */
 .modal {
 	display: none;
-	position: fixed; 
+	position: fixed;
 	padding-top: 100px;
-	left: 0; 
+	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100%; 
+	height: 100%;
 	background-color: rgba(244, 244, 244, 0.66);
 	overflow-y: auto;
 	z-index: 2;
-}  
+}
+
 .closeBtn {
 	display: block;
 	margin: auto;
 	width: 40%;
 }
+
 .modal-img {
 	display: block;
 	margin: auto;
 	width: 40%;
 }
+
 .modal .info {
 	display: block;
 	margin: auto;
 	width: 40%;
-  }
+}
 
 
 /* ABOUT */
@@ -237,11 +269,15 @@ input {
 	margin-top: 120px;
 	margin-left: 50px;
 	font-size: 18px;
-	width: 560px; /* 720px */
+	width: 560px;
+	/* 720px */
 }
+
 .about a {
 	color: orangered;
 }
+
 .italica {
 	font-style: italic;
+	margin: 40px 0px 40px 40px;
 }
