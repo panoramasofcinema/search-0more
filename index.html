@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NWTQJ2DTJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-9NWTQJ2DTJ');
     </script>
@@ -15,17 +16,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Search O More</title>
-	<link rel="icon" type="image/x-icon" href="imgs/column.png">
+    <link rel="icon" type="image/x-icon" href="imgs/column.png">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1066.0.min.js"></script>
     <script src="js/upload.js"></script>
 </head>
+
 <body>
     <div class="hero-image">
         <section class="inputGrid">
-            <!--<div class="title">search <strong>o</strong> more</div>-->
-            <div class="title">search • more</div>
+            <div class="title">search <strong style="font-size: 1.1em;">O</strong> more</div>
             <div class="search_box">
                 <input class="query" id="query_img" placeholder="green glass vial" type="text">
             </div>
@@ -40,11 +41,14 @@
 
         <section class="navBottom">
             <div class="navElement"><a href="https://www.uibk.ac.at" target="_blank">UIBK</a></div>
-            <div class="navElement"><a href="https://www.studio2uibk.org" target="_blank">Institut für Gestaltung.Studio2</a></div>
-            <div class="navElement"><a href="https://www.youtube.com/channel/UCa282qZMpJyvoyRPTF8zPiQ" target="_blank">House of Coded Objects</a></div>
-            <div class="navElement"><a href="https://0more.net" target="_blank">Studio O-More</a></div>
+            <div class="navElement"><a href="https://www.studio2uibk.org" target="_blank">Institut für
+                    Gestaltung.Studio2</a></div>
+            <div class="navElement"><a href="https://www.youtube.com/channel/UCa282qZMpJyvoyRPTF8zPiQ"
+                    target="_blank">House of Coded Objects</a></div>
+            <div class="navElement"><a href="https://0more.net" target="_blank">Studio OMore</a></div>
             <div class="navElement"><a href="https://ask.alice-ch3n81.net/" target="_blank">Ask Alice 🌸</a></div>
-            <div class="navElement"><a href="https://panoramasofcinema.ch" target="_blank">Panoramas of Cinema 🍿</a></div>
+            <div class="navElement"><a href="https://panoramasofcinema.ch" target="_blank">Panoramas of Cinema 🍿</a>
+            </div>
             <div class="navElement"><a href="about.html">About</a></div>
         </section>
     </div>
@@ -54,8 +58,8 @@
         let query = document.querySelector('.query');
         let searchBtn = document.querySelector('.searchBtn');
 
-        searchBtn.onclick = function(){
-            let url = "search.html?q="+query.value;
+        searchBtn.onclick = function () {
+            let url = "search.html?q=" + query.value;
             window.open(url, '_self')
         }
         document.querySelector('#fileUpload').addEventListener('change', event => {
@@ -63,4 +67,5 @@
         })
     </script>
 </body>
+
 </html>
